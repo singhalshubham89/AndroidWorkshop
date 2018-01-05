@@ -1,5 +1,6 @@
 package com.simple_coder.workshop_mit_pune;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,16 +17,17 @@ public class NewStudentActivity extends AppCompatActivity // we can also extend 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_new_student);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_new_student);
 
 //        EditText edtAge=findViewById(R.id.edtAge);
 //        binding.edtAge
         binding.btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("TAG" ,"OnClick: ");
-
-
+                Log.e("TAG", "OnClick: ");
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+                //setContentView(R.layout.activity_main);
             }
         });
 

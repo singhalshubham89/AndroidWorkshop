@@ -17,14 +17,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#fba45f"
-            >
+            android:background="#fba45f">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="1"/>
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark" />
         </LinearLayout>
 
         <LinearLayout
@@ -162,6 +162,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#a212aa">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Submit" />
 
         </LinearLayout>
 
